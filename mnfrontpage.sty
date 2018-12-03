@@ -328,7 +328,11 @@
                 
                 {
                     \bfseries
-                    \@author 
+                    \ifdefined\authors
+                        \authors
+                    \else
+                        \@author
+                    \fi
                 }
                 \\[0.1ex] 
                 \MNFP@kind
